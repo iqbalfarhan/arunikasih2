@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kode+Mono:wght@400..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: "Fredoka", sans-serif;
+        @apply font-medium;
+    }
+}
+
+@layer components {
+    .icon-4 {
+        @apply w-4 h-4;
+    }
+
+    .icon-5 {
+        @apply w-5 h-5;
+    }
+
+    .page-wrapper {
+        @apply space-y-6;
+    }
+    .table-wrapper {
+        @apply overflow-x-auto bg-base-200 rounded-xl;
+    }
+}
