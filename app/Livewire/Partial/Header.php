@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Partial;
 
+use Illuminate\Support\Facades\Route;
 use Livewire\Component;
 
 class Header extends Component
@@ -14,6 +15,9 @@ class Header extends Component
 
     public function render()
     {
-        return view('livewire.partial.header');
+        $names = explode('.', Route::currentRouteName());
+        return view('livewire.partial.header', [
+            'names' => $names,
+        ]);
     }
 }

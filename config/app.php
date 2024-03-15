@@ -160,6 +160,8 @@ return [
          * Package Service Providers...
          */
 
+        // App\Helper\Arunikasih::class,
+
         /*
          * Application Service Providers...
          */
@@ -184,6 +186,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Arunikasih' => App\Helper\Arunikasih::class,
     ])->toArray(),
 
 ];

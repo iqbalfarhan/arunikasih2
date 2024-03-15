@@ -3,8 +3,8 @@
         <div class="card-body flex-row gap-4">
             <div>
                 <div class="avatar">
-                    <div class="w-16 rounded-full">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <div class="w-16">
+                        <img src="https://arunikasih.com/img/browser-stats.svg" />
                     </div>
                 </div>
             </div>
@@ -20,8 +20,8 @@
         <div class="card-body flex-row gap-4">
             <div>
                 <div class="avatar">
-                    <div class="w-16 rounded-full">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <div class="w-16">
+                        <img src="https://arunikasih.com/img/processing.svg" />
                     </div>
                 </div>
             </div>
@@ -37,8 +37,8 @@
         <div class="card-body flex-row gap-4">
             <div>
                 <div class="avatar">
-                    <div class="w-16 rounded-full">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <div class="w-16">
+                        <img src="https://arunikasih.com/img/windows.svg" />
                     </div>
                 </div>
             </div>

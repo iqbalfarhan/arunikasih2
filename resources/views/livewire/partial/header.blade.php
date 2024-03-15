@@ -1,10 +1,11 @@
 <div class="flex flex-row justify-between items-center">
     <h1 class="text-xl font-semibold">{{ $title }}</h1>
-    <div class="text-xs breadcrumbs">
+    <div class="text-xs breadcrumbs hidden md:block">
         <ul>
-            <li><a>Home</a></li>
-            <li><a>Documents</a></li>
-            <li>Add Document</li>
+            <li class="capitalize">Superadmin</li>
+            @foreach ($names as $name)
+                <li class="capitalize">{{ $name }}</li>
+            @endforeach
         </ul>
     </div>
 </div>

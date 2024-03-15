@@ -27,5 +27,10 @@ Route::middleware('auth')->group(function(){
     Route::get('/dokumentasi', App\Livewire\Pages\Dokumentasi::class)->name('dokumentasi');
     Route::get('/profile', App\Livewire\Pages\Profile::class)->name('profile');
 
-    Route::get('/jenis', App\Livewire\Pages\Jenis\Index::class)->name('jenis.index');
+    Route::prefix('master')->group(function(){
+        Route::get('/jenis', App\Livewire\Pages\Jenis\Index::class)->name('jenis.index');
+        Route::get('/paket', App\Livewire\Pages\Paket\Index::class)->name('paket.index');
+        Route::get('/user', App\Livewire\Pages\User\Index::class)->name('user.index');
+        Route::get('/music', App\Livewire\Pages\Music\Index::class)->name('music.index');
+    });
 });

@@ -9,21 +9,33 @@
         font-family: "Fredoka", sans-serif;
         @apply font-medium;
     }
+
+    thead {
+        @apply border-b-2 border-base-300;
+    }
 }
 
 @layer components {
     .icon-4 {
         @apply w-4 h-4;
     }
-
     .icon-5 {
         @apply w-5 h-5;
+    }
+    .icon-10 {
+        @apply w-10 h-10;
+    }
+    .icon-12 {
+        @apply w-12 h-12;
     }
 
     .page-wrapper {
         @apply space-y-6;
     }
     .table-wrapper {
-        @apply overflow-x-auto bg-base-200 rounded-xl;
+        @apply overflow-x-auto bg-base-200 rounded-xl mx-auto whitespace-nowrap;
+    }
+    .modal {
+        @apply backdrop-blur-sm;
     }
 }

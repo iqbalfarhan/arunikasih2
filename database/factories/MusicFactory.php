@@ -3,11 +3,12 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Jenis>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Music>
  */
-class JenisFactory extends Factory
+class MusicFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,9 +17,11 @@ class JenisFactory extends Factory
      */
     public function definition(): array
     {
+        $judul = fake()->sentence(3);
+
         return [
-            'name' => fake()->word(),
-            'keterangan' => fake()->sentence()
+            'title' => $judul,
+            'filename' => url('music', Str::slug($judul).".mp3"),
         ];
     }
 }

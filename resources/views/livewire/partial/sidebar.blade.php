@@ -53,18 +53,6 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route('jenis.index') }}" @class(['active' => Route::is('jenis.index')]) wire:navigate>
-                    <x-tabler-bookmark class="icon-5" />
-                    <span>Jenis Undangan</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
-                    <x-tabler-tag class="icon-5" />
-                    <span>Paket Undangan</span>
-                </a>
-            </li>
-            <li>
                 <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
                     <x-tabler-mail class="icon-5" />
                     <span>List Undangan</span>
@@ -76,8 +64,51 @@
                     <span>Pembayaran</span>
                 </a>
             </li>
+            <li></li>
+            <li>
+                <a href="{{ route('user.index') }}" @class(['active' => Route::is('user.index')]) wire:navigate>
+                    <x-tabler-users class="icon-5" />
+                    <span>Data Customer</span>
+                </a>
+            </li>
             <li>
                 <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
+                    <x-tabler-database class="icon-5" />
+                    <span>Adminer DBSM</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
+                    <x-tabler-key class="icon-5" />
+                    <span>Role Permission</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <h3 class="menu-title">Data master</h3>
+        <ul>
+            <li>
+                <a href="{{ route('jenis.index') }}" @class(['active' => Route::is('jenis.index')]) wire:navigate>
+                    <x-tabler-bookmark class="icon-5" />
+                    <span>Jenis Undangan</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('paket.index') }}" @class(['active' => Route::is('paket.index')]) wire:navigate>
+                    <x-tabler-tag class="icon-5" />
+                    <span>Paket Undangan</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
+                    <x-tabler-list class="icon-5" />
+                    <span>Fasilitas</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('music.index') }}" @class(['active' => Route::is('music.index')]) wire:navigate>
                     <x-tabler-note class="icon-5" />
                     <span>Library Music</span>
                 </a>
@@ -98,25 +129,6 @@
                 <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
                     <x-tabler-brush class="icon-5" />
                     <span>Tema Undangan</span>
-                </a>
-            </li>
-            <li></li>
-            <li>
-                <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
-                    <x-tabler-users class="icon-5" />
-                    <span>Management client</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
-                    <x-tabler-database class="icon-5" />
-                    <span>Adminer DBSM</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('login') }}" @class(['active' => Route::is('login')]) wire:navigate>
-                    <x-tabler-key class="icon-5" />
-                    <span>Role Permission</span>
                 </a>
             </li>
         </ul>

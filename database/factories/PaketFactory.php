@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Jenis;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,10 @@ class PaketFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'jenis_id' => fake()->randomElement(Jenis::pluck('id')),
+            'name' => fake()->word(),
+            'harga' => fake()->numberBetween(100000, 500000),
+            'keterangan' => fake()->sentence(),
         ];
     }
 }

@@ -1,7 +1,7 @@
 <div class="navbar bg-base-100 border-b border-neutral">
     <div class="flex-none">
         <label for="drawer" class="btn btn-square btn-ghost">
-            <x-tabler-menu />
+            <x-tabler-menu class="icon-5" />
         </label>
     </div>
     <div class="flex-1">
